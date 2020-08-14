@@ -1,0 +1,13 @@
+//import mypackage.Coord;
+
+package mypackage;
+
+public class WeatherTower extends Tower {
+    public String getWeather(Coord coord) {
+        return "string";
+    }
+
+    public void changeWeather() {
+        
+    }
+}

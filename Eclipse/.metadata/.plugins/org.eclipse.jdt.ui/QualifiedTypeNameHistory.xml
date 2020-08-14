@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="mypackage.CheckFileFormat"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="com.avaj.classes.CheckFileFormat"/>
+    <fullyQualifiedTypeName name="avajlauncher.classes.CheckFileFormat"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="avajlauncher.classes.AircraftFactory"/>
+</qualifiedTypeNameHistroy>

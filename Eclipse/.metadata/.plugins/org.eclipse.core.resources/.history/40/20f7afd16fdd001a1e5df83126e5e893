@@ -1,0 +1,9 @@
+package mypackage;
+
+class MainClass {
+	static CheckFileFormat cff = new CheckFileFormat();
+	
+	public static void main(String[] args) {
+		cff.FileReader("scenario.txt");
+	}
+}

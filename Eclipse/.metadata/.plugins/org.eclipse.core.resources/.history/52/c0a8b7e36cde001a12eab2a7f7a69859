@@ -1,0 +1,26 @@
+package avajlauncher.classes;
+
+public abstract class AircraftFactory {
+	public Flyable newAircraft(String type, String name, int longitude, int latitude, int height) {
+		if(type == "Baloon") {
+			Coord BaloonCoord = new Coord(longitude, latitude, height);
+			WeatherTower weathertower = new WeatherTower();
+			Flyable newBaloon = new Baloon(name, BaloonCoord, weathertower);
+			System.out.println("New baloon be: " + newBaloon.toString());
+			return newBaloon;
+		} else if(type == "Helicopter") {
+			Coord HeliCoord = new Coord(longitude, latitude, height);
+			WeatherTower weathertower = new WeatherTower();
+			Flyable newHeli = new Helicopter(name, HeliCoord, weathertower);
+			System.out.println("New chopper be: " + newHeli.toString());
+			return newHeli;
+		} else if (type == "JetPlane") {
+			Coord JetCoord = new Coord(longitude, latitude, height);
+			WeatherTower weathertower = new WeatherTower();
+			Flyable newJet = new JetPlane(name, JetCoord, weathertower);
+			System.out.println("New baloon be: " + newBaloon.toString());
+			return newJet;
+		}
+		return null;
+	}
+}

@@ -1,0 +1,13 @@
+//import mypackage.Coord;
+
+package com.avaj.classes;
+
+public class WeatherTower extends Tower {
+    public String getWeather(Coord coord) {
+        return "string";
+    }
+
+    protected void changeWeather() {
+        
+    }
+}
