@@ -7,12 +7,9 @@ public class Tower {
 
     }
 
-    public void registerTower(WeatherTower weatherTower){
-
-    }
-
     public void register(Flyable flyable) {
-
+    	observers = flyable;
+    	System.out.println("Tower says: " + observers.getName() + " registered to weather tower.");
     }
 
     public void unregister(Flyable flyable) {

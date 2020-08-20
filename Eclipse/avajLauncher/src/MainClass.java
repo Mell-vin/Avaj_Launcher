@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.List;
-import avajlauncher.classes.helpers.*;
 import avajlauncher.classes.*;
 
 class MainClass {
@@ -24,8 +23,9 @@ class MainClass {
 					);
 					activePlanes.add(singlePlane);
 				}
-				System.out.println("Your planes be: ");
-				activePlanes.get(0).PrintInfo();
+				for (Flyable activePlane : activePlanes) {
+					activePlane.registerTower(weatherTower);
+				}
 			}
 		} else {
 			System.out.println("No scenario file given");

@@ -2,16 +2,32 @@ package avajlauncher.classes;
 
 public class Baloon extends Aircraft implements Flyable {
     private WeatherTower weatherTower;
+	private boolean registered = false;
+	private Flyable baloon;
+	private NewPlane np = new NewPlane();
 
     public void updateConditions() {
 
     }
 
-    public void registerTower(WeatherTower weatherTower) {
-        
+    public void registerTower(WeatherTower towerWeather) {
+    	this.baloon = np.newAircraft("Baloon", this.name, this.coordinates.getLongitude(), this.coordinates.getLatitude(), this.coordinates.getHeight());
+    	towerWeather = new WeatherTower();
+    	setRegistered(true);
+        setWeatherTower(towerWeather);
+        this.weatherTower.register(baloon);
+        this.weatherTower.getWeather(this.getCoordinates());
     }
 
-    protected Baloon(String Name, Coord coord, WeatherTower towerWeather) {
+    public boolean isRegistered() {
+		return registered;
+	}
+
+	public void setRegistered(boolean registered) {
+		this.registered = registered;
+	}
+
+	protected Baloon(String Name, Coord coord, WeatherTower towerWeather) {
         super(Name, coord);
         setWeatherTower(towerWeather);
     }

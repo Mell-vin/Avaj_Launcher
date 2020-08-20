@@ -2,10 +2,11 @@ package avajlauncher.classes;
 
 public class WeatherProvider {
     private static WeatherProvider weatherProvider;
-    private static String[] weather;
+    private static String[] weather = {"RAIN", "FOG", "SUN", "SNOW"};
 
+    //TODO weather creation algorithm, using random number generators or sum.
 
-    private WeatherProvider() {
+    public WeatherProvider() {
     }
 
     public static WeatherProvider getProvider() {
@@ -13,7 +14,7 @@ public class WeatherProvider {
     }
 
     public String getCurrentWeather(Coord coord) {
-        return weather[0]; //for now
+        return weather[0]; //TODO for now
     }
     
 }
