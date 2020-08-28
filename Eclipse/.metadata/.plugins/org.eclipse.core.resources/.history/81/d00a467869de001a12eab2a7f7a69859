@@ -1,5 +1,0 @@
-package avajlauncher.classes.helpers;
-import avajlauncher
-public class NewPlane extends AircraftFactory {
-
-}
