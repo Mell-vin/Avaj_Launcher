@@ -1,2 +1,0 @@
-javac -d . src/avajlauncher/classes/*.java src/avajlauncher/classes/aircrafts/*.java
-java -cp . io.github.lunairi.avaj_launcher.MainClass simulator.txt
